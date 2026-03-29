@@ -1,0 +1,25 @@
+VoiceLink
+Helping deaf and hearing people communicate seamlessly in real time
+
+Inspiration
+Communication between deaf and hearing people can be slow and frustrating. We wanted to create a simple, accessible tool that bridges this gap in real time. Our inspiration came from seeing the difficulty some people face when trying to communicate quickly without interpreters or assistive devices.
+
+What it does
+VoiceLink allows a deaf user to communicate with a hearing person in three ways: -Typing: Users can type messages, which the app also speaks aloud. Hearing users then respond verbally, and VoiceLink converts their speech into text on the screen. -Hand gesture recognition: The user performs simple hand gestures in front of the laptop camera. The app recognizes these gestures and converts them to spoken English. -Quick Responses: The user can use the quick response feature to respond to a question in an instant without having to type. This creates a two-way, real-time conversation that is fast, intuitive, and inclusive.
+
+How we built it
+-Frontend web app built with React and plain JavaScript. -Camera input: Accessed via getUserMedia to detect predefined ASL gestures (Hello, How are you?, What’s your name?, Thank you, Goodbye). For the prototype, gesture detection uses simplified placeholder logic. -Text-to-Speech: Typed messages and recognized gestures are spoken using the browser’s Speech Synthesis API. -Speech-to-Text: Microphone input is captured via the Web Speech API and displayed as live captions for the deaf user. -UI: Two clear sections: “Sign or Type to Speak” and “Speak to Read” with high-contrast text and large buttons for accessibility.
+
+Challenges we ran into
+-Gesture detection: Accurately recognizing actual ASL in real time is complex. We simplified the detection for this hackathon using simple rules and placeholders in. -Browser compatibility: Some speech APIs behave differently across browsers; we focused on Chrome for reliable testing. -Timing and latency: Ensuring that speech and text updates felt instantaneous required careful handling of async APIs
+
+Accomplishments that we're proud of
+-Built a functioning prototype that supports two-way communication. -Implemented both camera-based hand gestures, typed messages, and quick responses in a single interface. -Created a clean, accessible UI suitable for real users with auditory accessibility needs. -Demonstrated social impact and technical feasibility.
+
+What we learned
+-Real-time accessibility tools require careful UX design to make them intuitive. -Simplifying gestures for prototypes can still demonstrate a strong impact without full ML integration. -Browser APIs like Speech Synthesis and Web Speech are powerful tools for inclusive apps.
+
+What's next for VoiceLink
+-Expand ASL coverage: Add more gestures for richer conversations and begin a transfer to true American Sign Language. -Integrate real ML models: Use hand-tracking and computer vision for accurate gesture recognition. -Mobile optimization: Make the app work on tablets and phones. -Customization: Allow users to add their own phrases and shortcuts for faster communication.
+
+Built With

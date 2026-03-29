@@ -1,0 +1,23 @@
+Gym Computer Vision
+Set up a camera on your phone and computer vision will track your reps and detect form.
+
+Inspiration
+We were inspired by our own experiences while working out. There are many times when we are unsure if our form is correct or if we could be exercising more efficiently. With Gym Computer Vision, we wanted to create a tool that helps people work out more safely by identifying whether their form is correct in real time.
+
+What it does
+Gym Computer Vision is a camera-based application that tracks limb positions during a workout. Using this data, it can count repetitions and identify incorrect limb positioning, helping users improve both safety and efficiency while exercising.
+
+How we built it
+Using Mediapipes, we can detect the presence of a human body on a camera and apply a skeleton to it. This skeleton tracks various points on the human body, allowing our program to detect the type of exercise being performed. From here, we can use the skeleton to determine things like the distance body parts have from each other to find out if an exercise is being executed correctly, and if not, how to adjust it and fix it.
+
+Challenges we ran into
+One of our biggest challenges was tracking limbs accurately, especially the arms, since their movement and scale can vary greatly relative to the body. Once we figured out how to properly detect and track these movements, the rest of the development process became much smoother.
+
+Accomplishments that we're proud of
+We are most proud of creating a functioning computer vision system and also detecting the movement of limbs.
+
+What we learned
+Through this project, we learned how to use computer vision techniques to track human limbs through a camera feed and interpret visual cues to analyze body movement.
+
+What's next for Gym Computer Vision
+In the future, we plan to optimize the system so it can provide more personalized advice and real-time coaching. Instead of only pointing out mistakes, the app will guide users with clear suggestions, simulating the experience of learning directly from a trainer.

@@ -1,0 +1,41 @@
+l'étoile
+A phone, a PC, and your window to the world.Revolution hath arriven.
+
+Why?
+There's so many AR/VR devices that exist like now, be they the Apple Vision Pro or the Meta Ray-Bans or even Google Glass.
+
+The fundamental issue herewith is the price, and these companies really have overcomplicated what truly ought to be a simple implementation.
+
+Yet another issue: lack of power! Apple has done this over the years in order to differentiate its different products, such as the Mac from the iPad and now the Mac from the Vision Pro as well. They wish for money rather than revolution, for the smartphone market and the PC markets are so mature. It's a similar problem to what's happening with the switch to electric cars: it took 138 years between when the first gas automobile was introduced in 1885 until 10% of the global car market was electric in 2023.
+
+Raspberry Pis are relatively inexpensive, along with the hardware that connects thereto. Hence, multiple trial displays and a
+
+The Gist of It
+A phone. A PC. And your window to the world.
+
+There's a 3D-printed frame whereto the Pi shall mount, and one of the eyes is covered by an opaque colour OLED display whereupon the "wallpaper" is what the camera sees in order to make obstruction to vision minimal. In a production model, this shall be done with six monochrome transparent OLEDs, wherein three (red, green, and blue) would go to each eye, possibly adding a layer of electrochromic glass to each lens as well in order to add a fourth black subpixel in order to allow privacy or for VR gaming. Monochrome OLEDs are relatively inexpensive, and although there would be hindrance to making the "lenses" as compact as possible due to the physically greater number of components therein, as the display technology itself shall progress and demand for this technology increases, the breadth of these displays will end up becoming thinner.
+
+What's in a Name?
+The name "l'étoile" means "the star" in French. This depicts the product a star of a product, standing out over the overengineered, over--profit-driven competition: a product worthy of being brung to the masses. It's an enlightened and deliberately simple project whereby massive leap to the AR/VR game can result should I mass-produce.
+
+If you're wondering about the pronunciation, it's [le.twaˈl], or roughly lay-TWALL in English phonetic transcription
+
+Challenges I ran into
+Initially, I was rather careless in my wiring. I didn't use a case (nor prant I one with my 3D printer), nor did I follow the explicit instruction NOT to touch the GPIO whilst the Pi was on. This led to the unfortunate frying of my old Raspberry Pi 3B+. Thankfully, the microSD card thereof was salvageable as it was only the 3v3 rail which had broken.
+
+I had to order a new Raspberry Pi 4b in order to repair this, and it ultimately got working. I reconnected the camera, display, and microSD card thither, and alas I had a new working Pi. Safetywise, I also ordered a female-to-female GPIO wire so I wouldn't ''accidentally'' touch the raw GPIO pins again and hence have 2 bruck Pis.
+
+Once I arrove at the hackathon itself, I also needed to connect my Pi 4B to wi-fi so I could SSH thereto via my Macbook. This turnt out much more difficult than I would have expected, for the Pi has no regular-size HDMI ports and neither I nor the school had any adapters between micro-HDMI and regular HDMI. Hence, I had to
+
+Honestly, though, working alone was the least of my problems: it made me much more efficient, and once the mentors started to come help, it was so much easier just doing it one-on-one rather than having 3 or 4 people talking amongst one another just to agree on what ought to be done with the advice.
+
+Accomplishments that I'm proud of
+The total price of components is under $100. Sure, it would take a bit more money to mass-manufacture or to make the glasses' design more seamless as to not render them bulky.
+
+What I learnt
+Thanks to Dr.';s gracious help, I was, in our troubleshooting of the display connection, taught about various terminal tips such as control + A to go to the start of the line so I didn't have to spam the horizontal arrow keys myriad times.
+
+There's also my aforementioned mess-up with the fried Raspberry Pi 3B+, wherethrough I learnt to be careful and to not overestimate myself, for mistakes are always makeable. Thankfully, this grounded me (pun not intended) and let me focus more on fixing the actual display.
+
+What's next for l'étoile
+I ABSOLUTELY do not intend for this project to end with this competition. It has potential, and should I contact a supplier, I could even mass-produce it at scale. By the next iteration, my goal shall be to forgo the Raspberry Pi in entirety and instead build a similar device from scratch to be placen into a perhaps-bulkier glasses frame, along with the aforementioned five more displays.

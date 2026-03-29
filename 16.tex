@@ -1,0 +1,38 @@
+Dash-AI
+No more car manuals needed! With Dash AI you can figure why there are certain lights on your dashboard, and get suggestions on how and where to fix them!
+
+Inspiration
+A close relative of ours recently got into a car accident due to low tire pressure. The tire pressure warning light was lit but was completely ignored by her because she didn't know what it meant, and it was extremely tiny. It turned out that the air was slowly leaking from one tire and eventually made it dangerous to drive.
+
+She isn't alone. A study conducted by Los Angeles Times revealed that over 42% of drivers couldn’t identify the tire pressure symbol, and a study by USA today found less than 40% confident in what the symbols meant. Furthermore, they are small and sometimes hard to see.
+
+When life is on the line, and the knowledge to save lives isn't present, action is needed ASAP. Thus, in this hackathon's prompt of Social Good, we aimed to solve this disparity with AI and code.
+
+What it does
+In the time given, we made two solutions. The first, developed by Samvarth, was able to distinguish between 5 different types of symbols (TPMS, Braking, Battery, Oil, and Engine). In the end it had a high accuracy in the 90s.
+
+The second, developed by Kanishk, used the gemini API to analyze a photo with a dashboard and the warning lights are identified. Each light is then explained to the user and the steps to resolve it are also listed. At the end, the user is provided with the closest repair shop that is eligible to fix the problems listed.
+
+How we built it
+Solution 1 was built using a Convolutional Neural Network with TensorFlow. The architecture was a Sequential model with 1 flatten later and 6 dense layers, and a loss function of categorical cross entropy.
+
+Solution 2 was built using the Gemini API and Kivy as that allowed the program to run as an application through VSCode.
+
+All programs were developed with Python, with Solution 1 particularly using Jupyter notebook. See our GitHub respository for exact specifics.
+
+Challenges we ran into
+Some challenges that we ran into included the fact that we started later than other groups, only granting up about 7 and half hours to get started. More time can lead to a better product and that is something we hope to fix after this hackathon.
+
+What we learned
+We learned how to work with several new tools for us as developers including: 1) The Gemini API 2) The Google libraries 3) Frontend development 4) TensorFlow CNNs
+
+And, perhaps more importantly, skills of time management, product development, and advertisement! Overall it was extrremely fun and rewarding :)
+
+The Future
+We had an incredible time working on this project and are so thankful for the opportunity to participate in HackFRee 2026!
+
+Despite the hackathon ending, we are still committed and motivated to improving this project. We aim to combine the application with our CNN instead of relying on past APIs to make it innovative and a better learning experience.
+
+We also aim to fix the bugs of Android implementation and API map usage as well as expand the scope of the model beyond the 5 choices.
+
+Overall, with these improvements our project can soar to new heights! Expect to see future GitHub commits and edits to our Google Slides documentation from us! :)
